@@ -11,3 +11,16 @@
   "repNationNm": "한국",
   "repGenreNm": "드라마"
 }
+{
+    "movieCd": "2",
+    "movieNm": "Monster",
+    "movieNmEn": "Monster",
+    "prdtYear": "2017",
+    "openDt": "2017-10-20",
+    "typeNm": "단편",
+    "prdtStatNm": "기타",
+    "nationAlt": "미국",
+    "genreAlt": "호러",
+    "repNationNm": "미국",
+    "repGenreNm": "영화"
+}

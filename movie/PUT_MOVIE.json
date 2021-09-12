@@ -1,13 +1,34 @@
 {
   "settings": {
     "number_of_shards": 3,
-    "number_of_replicas": 2
+    "number_of_replicas": 2,
+    "analysis": {
+      "normalizer": {
+        "default_normalizer": {
+          "type": "custom",
+          "filter": ["lowercase", "asciifolding"]
+        }
+      },
+      "analyzer": {
+        "default_analyzer": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": ["lowercase", "asciifolding"]
+        }
+      }
+    }
   },
   "mappings": {
     "properties": {
       "movieCd": { "type": "integer" },
-      "movieNm": { "type": "text" },
-      "movieNmEn": { "type": "text" },
+      "movieNm": {
+        "type": "text",
+        "analyzer": "default_analyzer"
+      },
+      "movieNmEn": {
+        "type": "text",
+        "analyzer": "default_analyzer"
+      },
       "prdtYear": { "type": "integer" },
       "openDt": { "type": "date" },
       "typeNm": { "type": "keyword" },

@@ -7,7 +7,7 @@
     "properties": {
       "movieCd": { "type": "integer" },
       "movieNm": { "type": "text" },
-      "movieNmEn": { "type": "integer" },
+      "movieNmEn": { "type": "text" },
       "prdtYear": { "type": "integer" },
       "openDt": { "type": "date" },
       "typeNm": { "type": "keyword" },
